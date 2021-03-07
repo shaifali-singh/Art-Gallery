@@ -67,7 +67,7 @@ app.use(artworkRoutes);
 app.use(commentRoutes);
 
 
-app.listen(3000,function()
+app.listen(process.env.PORT||3000,function()
 		  {
 	console.log("ArtGallery has started");
 });
